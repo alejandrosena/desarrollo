@@ -1,0 +1,21 @@
+<tr id=<%= "user_#{user.id}" %>
+  <td></td>
+  <td><%= link_to user.id, edit_user_path(user), :remote => true %></td>
+  <td><%= user.email %></td>
+  <td><%= user.password %></td>
+  <td><%= user.confirm_password %></td>
+  <td><%= user.identification %></td>
+  <td><%= user.name %></td>
+  <td><%= user.male %></td>
+  <td><%= user.female %></td>
+  <td>
+   <%= link_to 'Mostrar', user, :remote => true, :class => 'btn btn-mini' %>
+    <%= link_to 'Editar', edit_user_path(user), :remote => true, :class => 'btn btn-mini' %>
+
+     <%= link_to 'Eliminar', user, 
+        :data => { :confirm => 'Esta Seguro?' },
+        :method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+        </td>
+  </td>
+</tr>
+  

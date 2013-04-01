@@ -1,0 +1,28 @@
+<%= simple_form_for(@user, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+<%= f.error_notification %>
+<%= display_base_errors @user %>
+
+  <%= f.input :email, :label => "Correo",  :required => true %>
+  <%= f.input :password, :label => "Password",  :required => true %>
+  <%= f.input :confirm_password, :label => "Confirmar password",  :required => true %>
+  <%= f.input :identification, :label => "Identificacion",  :required => true %>
+  <%= f.input :name, :label => "Nombre",  :required => true %>
+  <%= f.input :male, :label => "Masculino",  :required => true %>
+  <%= f.input :female, :label => "Femenino",  :required => true %>
+  <%= f.input :phone, :label => "Telefono",  :required => true %>
+  <%= f.input :movil, :label => "Celular",  :required => true %>
+  <%= f.input :location, :label => "Ubicacion",  :required => true %>
+  <%= f.input :document_id, :label => "Documentos",  :required => true %>
+  <%= f.input :rh_id, :label => "Rhs",  :required => true %>
+  <%= f.input :role_id, :label => "Rol",  :required => true %>
+  <%= f.input :type_user_id, :label => "Tipo Usuarios",  :required => true %>
+
+  <div class="form-actions">
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', users_path, :class => 'btn btn-small' %>
+  </div>
+
+
+<% end %>
+

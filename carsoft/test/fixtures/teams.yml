@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  brand: MyString
+  serial: MyString
+  description: MyString
+  porter: 
+  user: 
+
+two:
+  type: 
+  brand: MyString
+  serial: MyString
+  description: MyString
+  porter: 
+  user: 

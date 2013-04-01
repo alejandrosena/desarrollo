@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  entry: 2013-03-27
+  exit: 2013-03-27
+
+two:
+  entry: 2013-03-27
+  exit: 2013-03-27
